@@ -1,7 +1,7 @@
 
 # ✨Soul Pallet
 
-Hyy my name is Swaraj Anand, 👋 Welcome to our Soul Pallet! This project aims to provide users with a serene online environment for practicing yoga, meditation, and promoting mental well-being. and have some playing exercises for breathing and have a talk to hope Ai that works for you all day and night.
+Hyy my name is Vinita Prakash Singh, 👋 Welcome to our Soul Pallet! This project aims to provide users with a serene online environment for practicing yoga, meditation, and promoting mental well-being. and have some playing exercises for breathing and have a talk to hope Ai that works for you all day and night.
 
 The page is live there -> [Hosted link](https://soulpallet.netlify.app/) 
     
@@ -25,7 +25,7 @@ To run the project locally, follow these steps:
 
 1.Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/SwarajAnand/localStorageForm.git
+
    ```
 2. Navigate to the project directory.
 3. Open the `index.html` file in your web browser.
