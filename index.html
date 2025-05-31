@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Assets/lotus.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&family=Assistant:wght@200..800&family=Comfortaa:wght@300..700&family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&family=Signika:wght@300..700&family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap"
+        rel="stylesheet">
+    <title>SoulPalette</title>
+</head>
+
+<body>
+
+    <span class="hamBurger"><svg class="hamBurgericon" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+    </span>
+
+    <div class="mainContainer">
+
+        <div class="leftNav">
+            <img class="logo" src="./Assets/svg/soulpalette-high-resolution-logo-white-transparent.png" alt=""
+                srcset="">
+
+            <div class="home">
+                <p id="homePanner">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        className="w-6 h-6">
+                        <path
+                            d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
+                        <path
+                            d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
+                    </svg>
+
+                    <span>Home</span>
+                </p>
+            </div>
+            <div class="home">
+                <p id="musicPannel" name="musicPannel">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        className="w-6 h-6">
+                        <path fillRule="evenodd"
+                            d="M19.952 1.651a.75.75 0 0 1 .298.599V16.303a3 3 0 0 1-2.176 2.884l-1.32.377a2.553 2.553 0 1 1-1.403-4.909l2.311-.66a1.5 1.5 0 0 0 1.088-1.442V6.994l-9 2.572v9.737a3 3 0 0 1-2.176 2.884l-1.32.377a2.553 2.553 0 1 1-1.402-4.909l2.31-.66a1.5 1.5 0 0 0 1.088-1.442V5.25a.75.75 0 0 1 .544-.721l10.5-3a.75.75 0 0 1 .658.122Z"
+                            clipRule="evenodd" />
+                    </svg>
+
+                    <span>Music</span>
+                </p>
+            </div>
+            <div class="home">
+                <p id="scenePannel" name="scenePannel">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        className="w-6 h-6">
+                        <path fillRule="evenodd"
+                            d="M1.5 6a2.25 2.25 0 0 1 2.25-2.25h16.5A2.25 2.25 0 0 1 22.5 6v12a2.25 2.25 0 0 1-2.25 2.25H3.75A2.25 2.25 0 0 1 1.5 18V6ZM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0 0 21 18v-1.94l-2.69-2.689a1.5 1.5 0 0 0-2.12 0l-.88.879.97.97a.75.75 0 1 1-1.06 1.06l-5.16-5.159a1.5 1.5 0 0 0-2.12 0L3 16.061Zm10.125-7.81a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Z"
+                            clipRule="evenodd" />
+                    </svg>
+                    <span>Scene</span>
+                </p>
+            </div>
+            <div class="home">
+                <p id="relaxPannel" name="relaxPannel">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        className="w-6 h-6">
+                        <path
+                            d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                    </svg>
+
+
+                    <span>Breathe</span>
+                </p>
+            </div>
+            <div class="home">
+                <p id="yogaPannel" name="yogaPannel">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        className="w-6 h-6">
+                        <path fillRule="evenodd"
+                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                            clipRule="evenodd" />
+                    </svg>
+                    <span>Learn Yoga</span>
+                </p>
+            </div>
+            <div class="home">
+                <p id="waterPannel" name="waterPannel">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        className="w-6 h-6">
+                        <path fillRule="evenodd"
+                            d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z"
+                            clipRule="evenodd" />
+                    </svg>
+                    <span>Focus</span>
+                </p>
+            </div>
+            <div class="home">
+                <p id="aiPannel" name="aiPannel">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        className="w-6 h-6">
+                        <path fillRule="evenodd"
+                            d="M8.25 6.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM15.75 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM2.25 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM6.31 15.117A6.745 6.745 0 0 1 12 12a6.745 6.745 0 0 1 6.709 7.498.75.75 0 0 1-.372.568A12.696 12.696 0 0 1 12 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 0 1-.372-.568 6.787 6.787 0 0 1 1.019-4.38Z"
+                            clipRule="evenodd" />
+                        <path
+                            d="M5.082 14.254a8.287 8.287 0 0 0-1.308 5.135 9.687 9.687 0 0 1-1.764-.44l-.115-.04a.563.563 0 0 1-.373-.487l-.01-.121a3.75 3.75 0 0 1 3.57-4.047ZM20.226 19.389a8.287 8.287 0 0 0-1.308-5.135 3.75 3.75 0 0 1 3.57 4.047l-.01.121a.563.563 0 0 1-.373.486l-.115.04c-.567.2-1.156.349-1.764.441Z" />
+                    </svg>
+                    <span>Talk to Hope</span>
+                </p>
+            </div>
+        </div>
+        <div id="rightSectionBody">
+            <div id="homeRightMain">
+                <div>
+                    <p id="greetings"></p>
+                    <div class="lotusImgContainer">
+                        <p id="changableText"></p>
+                        <img class="lotus" src="./Assets/lotus.png" alt="" srcset="">
+                    </div>
+
+                </div>
+
+                <div class="lowerHomeSec">
+                    <div class="homeImageAndText">
+                        <div id="homeImageChanger">
+
+                        </div>
+                        <!-- <div class="Shadows"> -->
+                        <div id="whatIsSoulPallet">
+                            <p class="spC">What is soulPallet ? <span><svg class="openIcon"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                            d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
+                                    </svg>
+                                </span></p>
+
+                            <p class="accordion">"Soul Palette is your serene sanctuary in the digital world, where
+                                mindfulness meets
+                                tranquility. Dive into a realm of inner exploration and self-discovery as you embark
+                                on
+                                guided meditation journeys tailored to nourish your soul. Our curated collection of
+                                meditation sessions, resources, and community support offers a haven for those
+                                seeking
+                                balance, peace, and personal growth. Step onto the canvas of your soul and paint a
+                                masterpiece of serenity with Soul Palette."</p>
+
+
+                        </div>
+                        <!-- </div> -->
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="musicRightMain">
+                <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4PP3DA4J0N8?utm_source=generator"
+                    width="100%" height="720px" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
+            </div>
+            <div id="sceneRightMain">
+            </div>
+            <div id="relaxRightMain">
+                <div class="breathing-input">
+                    <h1 class="breathing-label">Select Breaths</h1>
+                    <select class="breathing-select">
+                        <option value="1">1 Breaths</option>
+                        <option value="3">3 Breaths</option>
+                        <option value="5">5 Breaths</option>
+                        <option value="7">7 Breaths</option>
+                        <option value="10">10 Breaths</option>
+                    </select>
+                </div>
+                <div class="breathing-circle-wrap">
+                    <div class="breathing-circle-outline"></div>
+                    <div class="breathing-circle-progress"></div>
+                </div>
+                <p class="breathing-breaths">Breaths remaining: <span class="breathing-breaths-text">0</span></p>
+                <p class="breathing-instructions">Are you ready to start breathing?</p>
+                <button class="breathing-start">Begin</button>
+
+            </div>
+            <div id="yogaRightMain">
+                <div class="yogaHeading">
+                    <select name="yoga" id="yogaSelect"></select>
+                    <h1>Get in love with yoga</h1>
+                </div>
+
+                <div id="yogaDataContainer"></div>
+            </div>
+            <div id="focusRightMain">
+            </div>
+            <div id="aiRightmMain">
+                <div id="geminiContainer"></div>
+                <div class="geminiInputContainers">
+
+                    <div class="textAreaHolder">
+                        <textarea name="" id="geminiInput" cols="30" rows="3"></textarea>
+                    </div>
+
+                    <div class="geminiTwoButtonContainer">
+                        <button id="geminiButton">Submit</button>
+                        <svg xmlns="http://www.w3.org/2000/svg" id="speechToText" class="mikeIcon" viewBox="0 0 24 24"
+                            fill="currentColor" className="w-6 h-6">
+                            <path d="M8.25 4.5a3.75 3.75 0 1 1 7.5 0v8.25a3.75 3.75 0 1 1-7.5 0V4.5Z" />
+                            <path
+                                d="M6 10.5a.75.75 0 0 1 .75.75v1.5a5.25 5.25 0 1 0 10.5 0v-1.5a.75.75 0 0 1 1.5 0v1.5a6.751 6.751 0 0 1-6 6.709v2.291h3a.75.75 0 0 1 0 1.5h-7.5a.75.75 0 0 1 0-1.5h3v-2.291a6.751 6.751 0 0 1-6-6.709v-1.5A.75.75 0 0 1 6 10.5Z" />
+                        </svg>
+                    </div>
+
+
+
+                </div>
+
+
+
+                <!-- </button> -->
+            </div>
+        </div>
+    </div>
+
+    <script type="importmap">
+        {
+              "imports": {
+                "@google/generative-ai": "https://esm.run/@google/generative-ai"
+              }
+            }
+          </script>
+
+    <script src="./script.js" type="module"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.91/build/spline-viewer.js"></script>
+
+</body>
+
+</html>

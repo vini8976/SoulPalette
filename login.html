@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./Assets/lotus.png" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&family=Assistant:wght@200..800&family=Comfortaa:wght@300..700&family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&family=Signika:wght@300..700&family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap"
+        rel="stylesheet">
+    <title>Basic Details</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Philosopher", sans-serif;
+        }
+
+        :root {
+            --mainBlack: #0B120B;
+            --darkestGreen: #1D2A20;
+            --lightGreen: #899D80;
+            --midGreen: #364C37;
+            --skyLite: #6E8895;
+            --light: #BEC9CF;
+            --white: #FFFFFF;
+        }
+
+        body {
+            background-image: url('./Assets/vecteezy_mandala-ornament-with-meditate-yoga-pose_6115325.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            border-radius: 5px 0 0 0;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(3.5px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            height: 50%;
+            width: 30%;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        input {
+            font-size: 25px;
+            border-radius: 6px;
+            border: none;
+            height: 35px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        input:focus {
+            outline: none;
+
+        }
+
+        #submitBtn {
+            width: 40.7%;
+            margin-top: 20%;
+            background-color: var(--midGreen);
+            color: white;
+            text-transform: uppercase;
+        }
+
+        #submitBtn:hover {
+            cursor: pointer;
+            background-color: var(--darkestGreen);
+            transition: 0.3s;
+        }
+
+        @media screen and (max-width: 1000px) {
+            form {
+                width: 60%;
+                height: 60%;
+            }
+        }
+
+        @media screen and (max-width: 550px) {
+            form {
+                width: 100%;
+                height: 60%;
+            }
+
+            #submitBtn {
+                width: 70%;
+            }
+        }
+
+        @media screen and (max-width: 350px) {
+            label {
+                font-size: 22px;
+            }
+
+            #input {
+                width: 85%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="./index.html" onsubmit="return goToMain()">
+            <label for="fName">Enter Your First Name</label><br>
+            <input type="text" name="fName" id="input" required><br>
+            <label for="lName">Enter Your Last Name</label><br>
+            <input type="text" name="lName" id="input"><br>
+            <input type="submit" value="Submit" id="submitBtn">
+        </form>
+    </div>
+
+
+    <script>
+        function goToMain() {
+            let name = document.getElementById("input").value;
+            let flag;
+            if (name.length > 0) {
+                localStorage.setItem("name", name);
+            }
+            if (flag) {
+                window.location.href = "./index.html";
+            }
+
+            return true;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Assets/lotus.png" type="image/x-icon">
+    <title>KnowAboutYoga</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Philosopher", sans-serif;
+        }
+
+        body {
+            background-image: url('https://images.unsplash.com/photo-1518014179319-21e9e8139b05?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-position: center;
+        }
+
+        body::-webkit-scrollbar {
+            width: 0px;
+            background-color: transparent;
+        }
+
+        img {
+            width: 450px;
+            height: 450px;
+            border-radius: 50%;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            transition: 0.3s ease-in;
+        }
+
+        #detailYogaContainer {
+            display: flex;
+            gap: 60px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .cards {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(15px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            min-width: 80vw;
+            max-width: 80vw;
+            text-align: center;
+            align-items: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 3.5rem;
+            padding: 30px;
+            font-weight: 600;
+        }
+
+        .cards h1 {
+            color: #393E46;
+            font-size: 2.8rem;
+        }
+
+        h2 {
+            color: #27496D;
+            padding: 15px;
+            font-size: 1.8rem;
+            min-width: fit-content;
+            /* font-weight: 100; */
+            /* border: 1px solid black; */
+            /* width: 10%; */
+        }
+
+        p {
+            /* font-weight: 100; */
+            font-size: 1.2rem;
+            color: #142850;
+            font-weight: 100;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="detailYogaHeading"></h1>
+    <div id="detailYogaContainer"></div>
+
+    <script>
+        let data = JSON.parse(localStorage.getItem("yogaData"));
+        let heading = document.getElementById("detailYogaHeading");
+        let container = document.getElementById("detailYogaContainer");
+
+        heading.innerText = data.name;
+
+        let arr = data.scheduled;
+
+        // localStorage.clear();
+
+        arr.map((ele) => {
+            let div = document.createElement("div");
+            div.innerHTML = `
+            <img src="${ele.image}" alt="">
+            <h1>${ele.sanskrit_name}</h1>
+            <h2>Description</h2>
+            <p>${ele.description}</p>
+            <h2>Benefits</h2>
+            <p>${ele.benefits}</p>
+            <h2>Steps how to perform</h2>
+            <p>${ele.steps}</p>
+            `;
+
+            console.log(div);
+            div.classList.add("cards");
+            container.append(div);
+        })
+        console.log(arr);
+    </script>
+</body>
+
+</html>
