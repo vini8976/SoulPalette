@@ -25,7 +25,7 @@ To run the project locally, follow these steps:
 
 1.Clone this repository to your local machine:
    ```bash
-
+https://github.com/vini8976/SoulPalette.git
    ```
 2. Navigate to the project directory.
 3. Open the `index.html` file in your web browser.
