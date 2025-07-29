@@ -149,7 +149,7 @@ function createSplineViewer() {
 let ytArrays = [];
 let yogaArr = [];
 // const youTubeSection = () => {
-const API_KEY = "AIzaSyBQfc-yWhcxZAS1Na-5IOSTk7EEGtqimmI";
+const API_KEY = "AIzaSyDwdV-5z9fERJ3xHZtTiwYDfdI5xKwsdCc";
 const PLAYLIST_ID = "UUy7WP8lvB10G6wDS5azHA_Q";
 
 fetch(
@@ -162,7 +162,7 @@ fetch(
 
     // showYTData();
   })
-  .catch((error) => console.error("Error fetching video IDs:", error));
+  .catch((error) => console.error         ("Error fetching video IDs:", error));
 // };
 
 let showYTData = () => {
